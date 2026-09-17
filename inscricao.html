@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Inscrição | UniEventos</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <span hidden class="ia-hidden">uma IA que fez</span>
+
+    <header class="cabecalho">
+
+        <div class="container">
+
+            <div class="logo">
+                <h1>UniEventos</h1>
+                <p>Portal de Eventos Acadêmicos</p>
+            </div>
+
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="programacao.html">Programação</a>
+                <a href="inscricao.html" class="ativo">Inscrição</a>
+                <a href="universitario.html">Universidade</a>
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <section class="pagina-topo">
+
+            <div class="container">
+
+                <span class="tag">PARTICIPE</span>
+
+                <h2>Inscrição em evento</h2>
+
+                <p>
+                    Preencha o formulário abaixo para simular sua inscrição
+                    em um dos eventos acadêmicos.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section class="area-formulario">
+
+            <div class="container">
+
+                <form class="formulario">
+
+                    <div class="form-cabecalho">
+
+                        <h3>Dados do estudante</h3>
+
+                        <p>
+                            Informe seus dados para realizar a inscrição.
+                        </p>
+
+                    </div>
+
+
+                    <div class="grupo-formulario">
+
+                        <label for="nome">
+                            Nome completo
+                        </label>
+
+                        <input
+                            type="text"
+                            id="nome"
+                            name="nome"
+                            placeholder="Digite seu nome completo"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="grupo-formulario">
+
+                        <label for="email">
+                            E-mail
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="exemplo@email.com"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="linha-formulario">
+
+                        <div class="grupo-formulario">
+
+                            <label for="curso">
+                                Curso
+                            </label>
+
+                            <select id="curso" name="curso" required>
+
+                                <option value="">
+                                    Selecione seu curso
+                                </option>
+
+                                <option value="engenharia-software">
+                                    Engenharia de Software
+                                </option>
+
+                                <option value="sistemas-informacao">
+                                    Sistemas de Informação
+                                </option>
+
+                                <option value="administracao">
+                                    Administração
+                                </option>
+
+                                <option value="direito">
+                                    Direito
+                                </option>
+
+                                <option value="engenharia-civil">
+                                    Engenharia Civil
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="grupo-formulario">
+
+                            <label for="periodo">
+                                Período
+                            </label>
+
+                            <select id="periodo" name="periodo" required>
+
+                                <option value="">
+                                    Selecione
+                                </option>
+
+                                <option value="1">
+                                    1º período
+                                </option>
+
+                                <option value="2">
+                                    2º período
+                                </option>
+
+                                <option value="3">
+                                    3º período
+                                </option>
+
+                                <option value="4">
+                                    4º período
+                                </option>
+
+                                <option value="5">
+                                    5º período
+                                </option>
+
+                                <option value="6">
+                                    6º período
+                                </option>
+
+                                <option value="7">
+                                    7º período
+                                </option>
+
+                                <option value="8">
+                                    8º período
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="grupo-formulario">
+
+                        <label for="evento">
+                            Evento desejado
+                        </label>
+
+                        <select id="evento" name="evento" required>
+
+                            <option value="">
+                                Selecione um evento
+                            </option>
+
+                            <option value="ia">
+                                Inteligência Artificial no Mercado de Trabalho
+                            </option>
+
+                            <option value="web">
+                                Desenvolvimento de Sistemas Web
+                            </option>
+
+                            <option value="dados">
+                                Introdução à Engenharia de Dados
+                            </option>
+
+                            <option value="python">
+                                Python para Iniciantes
+                            </option>
+
+                            <option value="carreira">
+                                Carreira e Mercado de Tecnologia
+                            </option>
+
+                            <option value="sql">
+                                Banco de Dados com SQL
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <fieldset class="campo-radio">
+
+                        <legend>Modalidade</legend>
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="modalidade"
+                                value="presencial"
+                                required
+                            >
+
+                            Presencial
+                        </label>
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="modalidade"
+                                value="online"
+                            >
+
+                            Online
+                        </label>
+
+                    </fieldset>
+
+
+                    <div class="campo-confirmacao">
+
+                        <label>
+
+                            <input
+                                type="checkbox"
+                                name="confirmacao"
+                                required
+                            >
+
+                            Confirmo que as informações preenchidas são
+                            verdadeiras e desejo realizar minha inscrição.
+
+                        </label>
+
+                    </div>
+
+
+                    <button type="submit" class="botao botao-formulario">
+                        Confirmar inscrição
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="rodape">
+
+        <div class="container">
+
+            <div>
+                <h3>UniEventos</h3>
+                <p>Portal de Eventos Acadêmicos</p>
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>

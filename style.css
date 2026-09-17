@@ -1,0 +1,712 @@
+/* =========================================
+   CONFIGURAÇÕES GERAIS
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f7fb;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   ELEMENTO OCULTO
+========================================= */
+
+.ia-hidden {
+    display: none;
+    color: transparent;
+    background-color: transparent;
+}
+
+
+/* =========================================
+   CABEÇALHO
+========================================= */
+
+.cabecalho {
+    background-color: #111827;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.cabecalho .container {
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.logo h1 {
+    font-size: 25px;
+    color: #60a5fa;
+}
+
+.logo p {
+    font-size: 12px;
+    color: #d1d5db;
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.navbar a {
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.ativo {
+    background-color: #2563eb;
+    color: white;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+    min-height: 500px;
+
+    background:
+        linear-gradient(
+            rgba(17, 24, 39, 0.80),
+            rgba(17, 24, 39, 0.80)
+        ),
+        url("https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?auto=format&fit=crop&w=1600&q=80");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+
+    color: white;
+}
+
+.hero-conteudo {
+    display: flex;
+    align-items: center;
+}
+
+.hero-texto {
+    max-width: 700px;
+}
+
+.hero h2 {
+    font-size: 52px;
+    line-height: 1.15;
+    margin: 15px 0;
+}
+
+.hero p {
+    font-size: 19px;
+    color: #e5e7eb;
+    margin-bottom: 30px;
+}
+
+
+/* =========================================
+   TAGS
+========================================= */
+
+.tag {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #2563eb;
+    background-color: #dbeafe;
+    padding: 6px 12px;
+    border-radius: 20px;
+}
+
+
+/* =========================================
+   BOTÕES
+========================================= */
+
+.botao {
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 7px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   SEÇÕES
+========================================= */
+
+.universidade,
+.eventos,
+.programacao,
+.area-formulario,
+.sobre-universidade {
+    padding: 70px 0;
+}
+
+.secao-titulo {
+    max-width: 800px;
+    margin-bottom: 40px;
+}
+
+.secao-titulo h2 {
+    font-size: 36px;
+    color: #111827;
+    margin: 10px 0 15px;
+}
+
+.secao-titulo p {
+    color: #6b7280;
+    margin-bottom: 10px;
+}
+
+.centralizado {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* =========================================
+   CARDS DE EVENTOS
+========================================= */
+
+.eventos {
+    background-color: #eef2ff;
+}
+
+.cards-eventos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+.card-evento {
+    background-color: white;
+    width: calc(33.333% - 17px);
+    min-width: 280px;
+    border-radius: 12px;
+    overflow: hidden;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.card-evento:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.card-evento img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.card-conteudo {
+    padding: 22px;
+}
+
+.categoria {
+    display: inline-block;
+    color: #2563eb;
+    background-color: #eff6ff;
+    padding: 5px 10px;
+    border-radius: 5px;
+
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.card-conteudo h3 {
+    font-size: 20px;
+    margin: 12px 0;
+    color: #111827;
+}
+
+.card-conteudo p {
+    color: #6b7280;
+    font-size: 14px;
+    margin: 15px 0;
+}
+
+.informacoes {
+    list-style: none;
+    font-size: 14px;
+    color: #4b5563;
+}
+
+.informacoes li {
+    margin-bottom: 5px;
+}
+
+.link-evento {
+    color: #2563eb;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.link-evento:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   PÁGINAS INTERNAS
+========================================= */
+
+.pagina-topo {
+    background-color: #111827;
+    color: white;
+    padding: 65px 0;
+}
+
+.pagina-topo h2 {
+    font-size: 42px;
+    margin: 10px 0;
+}
+
+.pagina-topo p {
+    color: #d1d5db;
+    max-width: 700px;
+}
+
+
+/* =========================================
+   TABELA
+========================================= */
+
+.tabela-container {
+    overflow-x: auto;
+    background-color: white;
+    border-radius: 10px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 750px;
+}
+
+caption {
+    text-align: left;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #111827;
+}
+
+th {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 15px;
+    text-align: left;
+}
+
+td {
+    padding: 15px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+tbody tr:hover {
+    background-color: #f8fafc;
+}
+
+.linha-destaque td {
+    background-color: #dbeafe;
+    color: #1e3a8a;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/* =========================================
+   INFORMAÇÕES DA PROGRAMAÇÃO
+========================================= */
+
+.informacao-programacao {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 30px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.informacao-programacao h3 {
+    margin-bottom: 10px;
+}
+
+.informacao-programacao p {
+    color: #6b7280;
+    margin-bottom: 20px;
+}
+
+
+/* =========================================
+   FORMULÁRIO
+========================================= */
+
+.area-formulario {
+    background-color: #eef2ff;
+}
+
+.formulario {
+    background-color: white;
+    max-width: 800px;
+    margin: 0 auto;
+
+    padding: 40px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.form-cabecalho {
+    margin-bottom: 30px;
+}
+
+.form-cabecalho h3 {
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.form-cabecalho p {
+    color: #6b7280;
+}
+
+.grupo-formulario {
+    margin-bottom: 20px;
+    flex: 1;
+}
+
+.grupo-formulario label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.grupo-formulario input,
+.grupo-formulario select {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+
+    font-size: 15px;
+
+    background-color: white;
+}
+
+.grupo-formulario input:focus,
+.grupo-formulario select:focus {
+    outline: none;
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+.linha-formulario {
+    display: flex;
+    gap: 20px;
+}
+
+.campo-radio {
+    border: 1px solid #e5e7eb;
+    border-radius: 7px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.campo-radio legend {
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+.campo-radio label {
+    margin-right: 25px;
+}
+
+.campo-radio input {
+    margin-right: 5px;
+}
+
+.campo-confirmacao {
+    margin-bottom: 25px;
+}
+
+.campo-confirmacao label {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    color: #4b5563;
+    font-size: 14px;
+}
+
+.campo-confirmacao input {
+    margin-top: 5px;
+}
+
+.botao-formulario {
+    width: 100%;
+    font-size: 16px;
+}
+
+
+/* =========================================
+   SOBRE A UNIVERSIDADE
+========================================= */
+
+.sobre-grid {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.sobre-imagem,
+.sobre-texto {
+    flex: 1;
+}
+
+.sobre-imagem img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.sobre-texto h2 {
+    font-size: 36px;
+    line-height: 1.2;
+    margin: 12px 0 20px;
+}
+
+.sobre-texto p {
+    color: #6b7280;
+    margin-bottom: 15px;
+}
+
+.valores {
+    display: flex;
+    gap: 25px;
+    margin-top: 50px;
+}
+
+.valor {
+    flex: 1;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.valor h3 {
+    margin-bottom: 10px;
+}
+
+.valor p {
+    color: #6b7280;
+}
+
+
+
+.rodape {
+    background-color: #111827;
+    color: white;
+    padding: 35px 0;
+}
+
+.rodape .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.rodape h3 {
+    color: #60a5fa;
+}
+
+.rodape p {
+    color: #9ca3af;
+    font-size: 14px;
+}
+
+
+@media (max-width: 900px) {
+
+    .cabecalho .container {
+        flex-direction: column;
+        padding: 18px 0;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h2 {
+        font-size: 42px;
+    }
+
+    .card-evento {
+        width: calc(50% - 13px);
+    }
+
+    .sobre-grid {
+        flex-direction: column;
+    }
+
+    .sobre-imagem,
+    .sobre-texto {
+        width: 100%;
+    }
+
+}
+
+
+/* Celulares */
+@media (max-width: 600px) {
+
+    .container {
+        width: 92%;
+    }
+
+    .cabecalho {
+        position: static;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    .navbar {
+        width: 100%;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .navbar a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero {
+        min-height: 450px;
+    }
+
+    .hero h2 {
+        font-size: 35px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .secao-titulo h2 {
+        font-size: 30px;
+    }
+
+    .pagina-topo h2 {
+        font-size: 32px;
+    }
+
+    .card-evento {
+        width: 100%;
+    }
+
+    .linha-formulario {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .formulario {
+        padding: 25px 20px;
+    }
+
+    .campo-radio label {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .valores {
+        flex-direction: column;
+    }
+
+    .rodape .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
